@@ -5,7 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "dev:front": "parcel serve ./client/index.html",
-    "dev:api": "nodemon ",
+    "dev:api": "nodemon",
     "build:front": "parcel build ./client/index.html",
     "build:api": "tsc",
     "build": "yarn build:front && yarn build:api",
