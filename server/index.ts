@@ -127,7 +127,7 @@ app.post("/rooms", (req, res) => {
               },
             },
           })
-          .then((rtdbRes: any) => {
+          .then((rtdbRes) => {
             const roomLongId = roomRef.key;
             const roomId = 100000 + Math.floor(Math.random() * 999999);
             roomCollection
