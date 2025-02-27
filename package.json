@@ -1,18 +1,18 @@
 {
   "name": "desafio-PPoT-online",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
     "dev:front": "parcel serve ./client/index.html",
-    "dev:api": "nodemon",
+    "dev:api": "nodemon ",
     "build:front": "parcel build ./client/index.html",
-    "build:api": "tsc ./server/index.ts ./server/index.js",
+    "build:api": "tsc",
     "build": "yarn build:front && yarn build:api",
     "start": "node ./server/index.js"
   },
   "dependencies": {
+    "@types/node": "^22.13.5",
     "@vaadin/router": "^2.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
