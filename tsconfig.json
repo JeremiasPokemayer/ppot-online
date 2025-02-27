@@ -5,6 +5,9 @@
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
     "module": "CommonJS"
   },
   "include": ["server/**/index.ts"]
