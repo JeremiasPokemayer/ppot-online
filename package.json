@@ -9,7 +9,7 @@
     "build:front": "parcel build ./client/index.html",
     "build:api": "tsc",
     "build": "yarn build:front && yarn build:api",
-    "start": "node ./server/index.js"
+    "start": "ts-node ./server/index.ts"
   },
   "dependencies": {
     "@types/node": "^22.13.5",
