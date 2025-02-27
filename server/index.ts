@@ -1,6 +1,6 @@
 import { firestore, db } from "./db";
 import { nanoid } from "nanoid";
-import cors from "cors";
+import * as cors from "cors";
 import * as express from "express";
 
 const app = express();
