@@ -1,0 +1,57 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between;
+  font-family: "Odibee Sans";
+}
+@media (min-width: 960px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+}
+.container-title {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 144, 72, 1);
+  position: relative;
+  padding: 0px 45px;
+  margin-top: 115px;
+  height: 219px;
+}
+.title-ppt {
+  font-size: 80px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 5px;
+}
+.title-o {
+  position: absolute;
+  top: 4%;
+  left: 65%;
+  color: rgba(145, 204, 175, 1);
+  width: 68px;
+  height: 78px;
+  font-size: 80px;
+  font-weight: 700;
+}
+.button-newGame,
+.button-joinRoom,
+.button-empezar {
+  border: 10px solid rgba(0, 25, 151, 1);
+  background-color: rgba(0, 108, 252, 1);
+  font-family: "Odibee Sans";
+  color: white;
+  width: 90%;
+  height: 87px;
+  font-size: 45px;
+  font-weight: 400;
+  margin: 0 27px;
+}
+.container-ppt {
+  display: flex;
+  justify-content: space-around;
+}

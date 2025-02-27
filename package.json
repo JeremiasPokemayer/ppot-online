@@ -1,0 +1,45 @@
+{
+  "name": "desafio-PPoT-online",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "dev:front": "parcel serve ./client/index.html",
+    "dev:api": "nodemon",
+    "build:front": "parcel build ./client/index.html",
+    "build:api": "tsc ./server/index.ts ./server/index.js",
+    "build": "yarn build:front && yarn build:api",
+    "start": "node ./server/index.js"
+  },
+  "dependencies": {
+    "@vaadin/router": "^2.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^11.3.1",
+    "firebase-admin": "^13.1.0",
+    "nanoid": "3.3.4",
+    "nodemon": "^3.1.9",
+    "parcel": "^2.13.3",
+    "process": "^0.11.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  },
+  "devDependencies": {
+    "assert": "^2.0.0",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^5.5.0||^6.0.0",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.1.0",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.0",
+    "querystring-es3": "^0.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.1.0",
+    "url": "^0.11.0",
+    "util": "^0.12.3",
+    "vm-browserify": "^1.1.2"
+  }
+}
