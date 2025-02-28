@@ -1,4 +1,6 @@
 import { update } from "firebase/database";
+import * as dotenv from "dotenv";
+dotenv.config();
 import { Router } from "@vaadin/router";
 import { getDatabase, ref, app, get, onValue } from "../client/db";
 export type Jugada = "piedra" | "papel" | "tijera";
@@ -6,7 +8,7 @@ export type Game = {
   player1: Jugada;
   player2: Jugada;
 };
-const API_BASE_URL = "http://localhost:3002";
+const API_BASE_URL = process.env.API_BASE_URL;
 
 const state = {
   data: {
