@@ -1,4 +1,4 @@
-import { firestore, db } from "./db";
+import { firestore, db } from "./db.js";
 import { nanoid } from "nanoid";
 import cors from "cors";
 import express from "express";
